@@ -1,0 +1,19 @@
+// Міксини
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+// Плейсхолдери
+%flex-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}

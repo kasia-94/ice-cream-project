@@ -1,0 +1,22 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "index.scss",
+        "_common.scss",
+        "_variables.scss",
+        "_mixins.scss",
+        "_header.scss",
+        "_hero.scss",
+        "_products.scss",
+        "_about.scss",
+        "_advantages.scss",
+        "_gallery.scss",
+        "_reviews.scss",
+        "_contacts.scss",
+        "_footer.scss",
+        "_modal-window.scss"
+    ],
+    "names": [],
+    "file": "index.css"
+}

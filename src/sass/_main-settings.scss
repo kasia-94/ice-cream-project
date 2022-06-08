@@ -1,0 +1,65 @@
+.section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+
+  //   @media screen and (min-width: 768px) {
+  //   }
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.main-title {
+  font-family: 'Titan One';
+  color: $accent-color;
+  @include font(400, 34px, 1.15, 0.04em);
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    @include font(null, 48px, null, null);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(null, 58px, 1.14, 0.06em);
+  }
+}
+
+.pre-title {
+  font-family: 'Titan One';
+  color: $secondary-hero-color;
+  @include font(400, 18px, 1.17, null);
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    @include font(null, 26px, 1.15, null);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(null, 30px, 1.13, 0.04em);
+  }
+}

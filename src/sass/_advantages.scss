@@ -41,10 +41,10 @@
     font-size: 12px;
     line-height: 170%;
     color: $black-color;
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 768px) {
       width: 162px;
     }
-    @media screen and (min-width: 1280px){
+    @media screen and (min-width: 1280px) {
       width: 200px;
     }
   }
@@ -62,12 +62,6 @@
     screen and (min-resolution: 2dppx) {
     background-image: url('../images/adv_1_2x.png');
   }
-  @media screen and (min-width: 768px) {
-    background-image: url('../images/adv_1_tablet.png');
-  }
-  @media screen and (min-width: 1200px) {
-    background-image: url('../images/adv_1_desktop.png');
-  }
 }
 .advantages__item:nth-child(2)::before {
   content: '';
@@ -81,13 +75,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url('../images/adv_2_2x.png');
-}
-@media screen and (min-width: 768px) {
-  background-image: url('../images/adv_2_tablet.png');
-}
-@media screen and (min-width: 1200px) {
-  background-image: url('../images/adv_2_desktop.png');
-}
+  }
 }
 .advantages__item:nth-child(3)::before {
   content: '';
@@ -101,11 +89,5 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url('../images/adv_3_2x.png');
-}
-@media screen and (min-width: 768px) {
-  background-image: url('../images/adv_3_tablet.png');
-}
-@media screen and (min-width: 1200px) {
-  background-image: url('../images/adv_3_desktop.png');
-}
+  }
 }

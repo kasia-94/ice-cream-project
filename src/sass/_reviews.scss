@@ -1,0 +1,83 @@
+.reviews {
+    margin: 0 auto;
+    &__title{
+        text-align: center;
+    }
+    &__container{
+        padding-top: 80px;
+        padding-bottom: 48px;
+        &--bg{
+            background-color: $white-color;
+
+        }
+    }
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__photo {
+            display: block;
+            border-radius: 50%;
+            margin-bottom: 32px;
+        }
+    &__box {
+            padding: 43px 50px 17px 50px;
+            background-color: $slide-box-bg-color;
+            position: relative;
+            margin-bottom: 36px;
+            &::after{
+                display: block;
+                content: "";
+                position: absolute;
+                bottom: -20px;
+                left: 50%;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $slide-text-marker-color;
+                box-shadow: 12px 0px 0 0 $slide-text-marker-color,
+                                -12px 0px 0 0 $slide-text-marker-color;
+
+            }
+        }
+    &__text {
+            @include font(500, 12px, 2.58, null);
+            // font-family: 'DM Sans', sans-serif;
+            // font-weight: 500;
+            // font-size: 12px;
+            // line-height: calc(31/12);
+            text-align: center;
+            margin: 0;
+            padding-left: 20px;
+            padding-right: 13px;
+            background-image: repeating-linear-gradient(to bottom,
+                    rgba(255,255,255,0),
+                    rgba(255, 255, 255, 0) 30px,
+                    $light-grey 30px,
+                    $light-grey 31px);
+            &::before{
+                display: block;
+                content: "";
+                width: 54px;
+                height: 40px;
+                background-image: url(../images/quotes-min.png);
+                position: absolute;
+                top: -12px;
+                left: 3px;
+            }
+            span {
+                position: relative;
+                
+            }
+        }
+    &__thumb{position: relative;}
+    &__title{
+        @include font (500, 14px, 1.86, null);
+        color: $black-color;
+
+    }
+}
+
+

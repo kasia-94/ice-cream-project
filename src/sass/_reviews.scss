@@ -7,11 +7,14 @@
              background-color: $white-color;
     
          }
-    // &__container{
+    &__container{
+       @media screen and (min-width:768px) {
+            padding: 0px 74px;
+        
+       }
        
-       
-    // }
-    @media screen and (min-width:320px){
+    }
+    @media screen and (min-width:320px) and (max-width :767px){
         &--mobile{
             padding-bottom: 24px;
         }
@@ -33,6 +36,10 @@
             background-color: $slide-box-bg-color;
             position: relative;
             margin-bottom: 36px;
+            @media screen and (min-width:768px) {
+                    padding: 37px 6px 44px;
+                    margin-bottom: 24px;
+                }
             &::after{
                 display: block;
                 content: "";
@@ -45,15 +52,13 @@
                 background-color: $slide-text-marker-color;
                 box-shadow: 12px 0px 0 0 $slide-text-marker-color,
                                 -12px 0px 0 0 $slide-text-marker-color;
+               
 
             }
         }
     &__text {
             @include font(500, 12px, 2.58, null);
-            // font-family: 'DM Sans', sans-serif;
-            // font-weight: 500;
-            // font-size: 12px;
-            // line-height: calc(31/12);
+            color: $black-color;
             text-align: center;
             margin: 0;
             padding-left: 20px;
@@ -63,6 +68,11 @@
                     rgba(255, 255, 255, 0) 30px,
                     $light-grey 30px,
                     $light-grey 31px);
+            @media screen and (min-width:768px) {
+                padding-left: 44px;
+                padding-right: 50px;
+                @include font (null, 14px, 2.16, 0.04em);
+            }
             &::before{
                 display: block;
                 content: "";
@@ -72,6 +82,12 @@
                 position: absolute;
                 top: -12px;
                 left: 3px;
+                @media screen and (min-width:768px) {
+                       width: 60px;
+                       top: -17px;
+                       left: 0;
+                    background-image: url(../images/quotes-768-min.png);
+                    }
             }
             span {
                 position: relative;

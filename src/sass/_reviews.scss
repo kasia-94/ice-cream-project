@@ -1,15 +1,21 @@
 .reviews {
-    margin: 0 auto;
+    
     &__title{
         text-align: center;
     }
-    &__container{
-        padding-top: 80px;
-        padding-bottom: 48px;
-        &--bg{
-            background-color: $white-color;
-
+    &--bg {
+             background-color: $white-color;
+    
+         }
+    // &__container{
+       
+       
+    // }
+    @media screen and (min-width:320px){
+        &--mobile{
+            padding-bottom: 24px;
         }
+        
     }
 }
 

@@ -137,4 +137,13 @@ img {
     letter-spacing: 0.04em;
   }
 }
+
+.about {
+  background-color: tomato;
+}
+
+.about__title {
+  font-size: 50px;
+  color: tomato;
+}
 /*# sourceMappingURL=main.css.map */

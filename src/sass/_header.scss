@@ -14,14 +14,17 @@
     padding: 8px 0;
 
     @media screen  and (min-width:320px) {
-        margin-left: 20px;
+        margin-left: 0;
         margin-right: 61px;
     }
     @media screen  and (min-width:768px) {
-        margin-left: 32px;
+        margin-right: 293px;
+        margin-left: 0;
     }
     @media screen  and (min-width:1280px) {
-        margin-left: 0px;
+        margin-right: 175px;
+        margin-left: 0;
+
     }
 }
 
@@ -79,7 +82,7 @@ margin-right: 35px;
     height: 44px;
     background: #FFFFFF;
     
-    
+    cursor: pointer;
     border-color: transparent;
     transition: background-color 250ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
     white-space: nowrap;
@@ -123,6 +126,12 @@ margin-right: 35px;
 .main-btn{
     display: flex;
 }
+
+.js-menu-container{
+    @media screen  and (min-width:1279px){
+        display: none;
+    }
+}
 .js-open-menu{
     padding: 0;
     border:none;
@@ -130,20 +139,15 @@ margin-right: 35px;
     margin-left: auto;
     width: 20px;
     height: 12px;
-    @media screen  and (max-width:320px){
-        margin-left: 61px;
-    }
-   
+    cursor: pointer;
     @media screen  and (min-width:1279px){
         display: none;
     }
 }
-.js-close-menu{
-    display: block;
-    margin-left: auto;
-    margin-bottom: 26px;
-}
 
+.current{
+    color: #D41443;
+}
 
 
 .js-menu-container{
@@ -169,6 +173,9 @@ margin-right: 35px;
     width: 100%;
 }
 .js-close-menu{
+    display: block;
+    margin-left: auto;
+    margin-bottom: 26px;
     background-color: rgba( 0, 0, 0, 0);
     border: 0;
     margin-bottom: 26px;
@@ -178,11 +185,13 @@ margin-right: 35px;
     position: relative;
     top:0;
     right: 0;
-    transition: color 250ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
+    fill:#FFFFFF;
+    transition: fill 250ms cubic-bezier(0.4 , 0 , 0.2 ,1 );
+    cursor: pointer;
 }
 .js-close-menu:hover,
 .js-close-menu:focus{
-    color: #D41443;
+    fill: #D41443;
 }
 
 .mob-menu__item{
@@ -220,8 +229,9 @@ margin-right: 35px;
     border-radius: 22px;
     min-width: 200px;
     height: 44px;
+    cursor: pointer;
     background-color: #FFFFFF;
-    border-color: transparent;
+    border-color: rgba( 0, 0, 0, 0);
     transition: background-color 250ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
     white-space: nowrap;
 }

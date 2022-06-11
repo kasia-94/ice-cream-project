@@ -4,10 +4,7 @@ const swiper = new Swiper('.swiper', {
     autoplay: {
    delay: 2500,
     },
-//     effect: 'fade',
-//   fadeEffect: {
-//     crossFade: false
-//   },
+
 
   effect: 'flip',
   flipEffect: {

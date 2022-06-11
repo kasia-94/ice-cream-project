@@ -149,4 +149,26 @@
     width: 100%;
     height: auto;
 }
-
+.swiper-pagination{
+    position: static;
+    margin-top: 32px;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0px 6px;
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background-color: $swiper-pagination-bullet-color;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-image: url(../images/active-bullet.svg);
+    background-color: transparent;
+    border-radius: 0;
+    
+}
+.swiper-wrapper{
+    overflow: hidden;
+}

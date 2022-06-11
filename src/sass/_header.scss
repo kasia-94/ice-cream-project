@@ -1,6 +1,5 @@
 .header{
     background-color: #FFB8CA;
-    z-index: 10;
     
 }
 .header-container{
@@ -102,21 +101,16 @@ margin-right: 35px;
 
     }
 }
-.vector-svg{
-    color: #D41443;
-    margin-right: 12px;
+.header-btn:hover{
+    background-color: #ECEBEB;
 }
 
-.header-btn::after{
-    content: "";
-    display: inline-block;
-    width: 4px;
-    height: 8px;
-    background-image: url(../images/vector.svg);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    cursor: pointer;
+.vector-svg{
+    fill: #D41443;
+    margin-left: 27px;
 }
+
+
 
 
 .mob-svg-open{
@@ -163,9 +157,7 @@ margin-right: 35px;
     background-color: #E17992;
     overflow-y: auto;
     box-shadow: -8px 2 20px rgba( 0, 0, 0, .25);
-
     .container{
-        display: flex;
         flex-direction: column;
         height: 100%;
         justify-content: space-between;
@@ -185,9 +177,20 @@ margin-right: 35px;
     display: block;
     position: relative;
     top:0;
-    right: 20px;
+    right: 0;
+    transition: color 250ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
+}
+.js-close-menu:hover,
+.js-close-menu:focus{
+    color: #D41443;
 }
 
+.mob-menu__item{
+    border-bottom: 1px solid #E18298;
+    border-top: 1px solid #E18298;
+    padding: 11px 0;
+
+}
 .mob-menu__link{
     font-weight: 700;
     font-style: 14px;
@@ -198,33 +201,26 @@ margin-right: 35px;
     color: #FFFFFF;
     transition: color 250ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
     white-space: nowrap;
-    padding-top: 11px;
-    padding-bottom: 13px;
-    border-bottom: 1px solid #E18298;
+    
+}
+.mob-menu__link:hover,
+.mob-menu__link:focus{
+    color: #D41443;
 }
 .mob-btn{
     font-weight: 700;
     font-size: 16px;
     line-height: 1.31;
     color: #D41443;
-
     padding: 11px 0;    
     margin-bottom: 20px;
     display: inline-block;
     text-align: center;
-
     border: 0;
     border-radius: 22px;
-    
-    
-  
-   
-   
     min-width: 200px;
     height: 44px;
     background-color: #FFFFFF;
-    
-    
     border-color: transparent;
     transition: background-color 250ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
     white-space: nowrap;

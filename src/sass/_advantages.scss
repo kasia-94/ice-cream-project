@@ -8,13 +8,8 @@
     width: 230px;
     margin-bottom: 32px;
     @media screen and (min-width: 768px) {
-      width: calc((100% - 44px) / 3);
+      width: calc(100% / 3);
       margin-bottom: 0;
-      margin-right: 22px;
-    }
-    @media screen and (min-width: 1280px) {
-      width: calc((100% - 212тзьpx) / 3);
-      margin-right: 106px;
     }
   }
   &__item:last-child {

@@ -1,0 +1,227 @@
+//-----------------BACKDROP----------------------------------//
+//.backdrop {
+//    position: fixed;
+//    top: 0;
+//    left: 0;
+//    width: 100%;
+//    height: 100%;
+//    background-color: rgba(0, 0, 0, 0.1);
+//    opacity: 1;
+//    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//}
+
+//.backdrop.is-hidden {
+//    opacity: 0;
+//    pointer-events: none;
+//}
+
+//.backdrop.is-hidden .modal {
+//    transform: translate(-50%, -50%) scale(0.8);
+//}
+
+.modal {
+    position: absolute;
+    width: 100%;
+    max-width: 320px;
+    height: 550px;
+    background-color: $menu-background-color;
+    border-radius: 4px;
+}
+
+.modal__top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #FFB8CA;
+}
+
+.modal__label{
+    width: 150px;
+}
+
+.modal__button{
+    width: 80px;
+    height: 25px;
+    border: 1px solid #FFB8CA;
+    border-radius: 25px;
+    background-color: $white-color;
+    color: $accent-color;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        background-color: #FFB8CA;
+    }
+    
+    &:active {
+        background-color: $accent-color;
+        color: $white-color;
+    }
+}
+
+.form{
+    padding: 20px;
+    color: $white-color;
+}
+
+.form__title{
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    
+    @media screen and (min-width:1280px) {
+        line-height: 1.15;
+    }
+}
+
+.modal__list{
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #FFB8CA;
+}
+
+.modal__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal__switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.modal__check {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.modal__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 34px;
+    background-color: $white-color;
+    transition: 0.4s;
+    &:before{
+        position: absolute;
+        content: "";
+        height: 22px;
+        width: 22px;
+        left: 2px;
+        bottom: 1px;
+        border-radius: 50%;
+        background-color: #FFB8CA;
+    }
+}
+
+.modal__check:focus + .modal__slider {
+    box-shadow: 0 0 1px #FFB8CA;
+}
+
+.modal__check:checked + .modal__slider:before {
+    transform: translateX(25px);
+    background-color: $accent-color;
+}
+
+.form__imput-product{
+    outline: none;
+    width: 50px;
+    margin-top: 4px;
+    padding-left: 5px;
+    border: 2px solid #FFB8CA;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        
+    &:focus,
+    &:hover {
+        border-color: $accent-color;
+    }
+}
+
+.form__field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+.form__imput {
+    outline: none;
+    margin-top: 4px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 35px;
+    border: 2px solid #FFB8CA;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        border-color: $accent-color;
+    }
+    
+    &:focus-within+.form__icon {
+        fill: $accent-color;
+    }
+}
+
+.form__icon {
+    position: absolute;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 12px;
+    fill: #FFB8CA;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__imput-location{
+    outline: none;
+    border: 2px solid #FFB8CA;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        border-color: $accent-color;
+    }
+}
+
+.form__button {
+    width: 100%;
+    height: 40px;
+    margin-top: 70px;
+    font-size: 24px;
+    line-height: 1.5;
+    border: 1px solid #FFB8CA;
+    border-radius: 25px;
+    background-color: $white-color;
+    color: $accent-color;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus,
+    &:hover {
+        background-color: #FFB8CA;
+    }
+
+    &:active {
+        background-color: $accent-color;
+        color: $white-color;
+    }
+}

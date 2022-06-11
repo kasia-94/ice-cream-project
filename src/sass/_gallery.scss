@@ -1,8 +1,12 @@
 .gallery {
+  background-image: linear-gradient(
+    to bottom,
+    $based-background-color 50%,
+    $white-color 50%
+  );
   .container {
     outline: 1px solid tomato;
-    height: 320px;
-    margin: 0;
-    background-image: linear-gradient(to bottom, tomato 50%, black 50%);
+    margin-left: auto;
+    margin-right: auto;
   }
 }

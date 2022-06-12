@@ -1,5 +1,6 @@
 .header{
     background-color: $main-hero-color;
+    
 }
 
 .header-container{
@@ -7,11 +8,15 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.header>.header-container{
+    max-width: 100%;
 }
 
 .logo-img{
-    padding: 8px 0;
-    margin-left: 0;
     
     @media screen  and (min-width:320px) {
         margin-right: 61px;
@@ -21,12 +26,13 @@
     }
     @media screen  and (min-width:1280px) {
         margin-right: 175px;
-
     }
 }
 .header-logo{
-    animation: logo-img-anime 2s 0.75s infinite;
+    padding: 8px 0;
+    margin-left: 0;
 }
+
 
 .header-navigation{
     display: flex;
@@ -41,7 +47,8 @@
     display: flex;
     align-items: center;
     color: $white-color;
-    transition: color 250ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
+    transition: color 350ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s,
+    box-shadow 350ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
     white-space: nowrap;
 }
 
@@ -49,6 +56,8 @@
 .nav-menu__link:hover,
 .nav-menu__link:focus{
     color: $accent-color;
+    box-shadow: 2px 4px 4px 2px rgba($color: #f580ac, $alpha: 1.0);
+
 }
 .nav-menu{
     display: flex;
@@ -81,10 +90,10 @@ margin-right: 35px;
 
     height: 44px;
     background: $white-color;
-    
     cursor: pointer;
     border-color: transparent;
-    transition: background-color 250ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
+    transition: background-color 300ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s,
+    box-shadow 300ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
     white-space: nowrap;
 
     @media screen  and (min-width:768px){
@@ -101,22 +110,21 @@ margin-right: 35px;
     }
     @media screen  and (max-width:767px){
         display: none;
-
     }
 }
 .header-btn:hover{
     background-color: #ECEBEB;
+    box-shadow: 2px 4px 4px 2px rgba($color:  #f580ac , $alpha: 1.0);
 }
 
 .vector-svg{
     fill: $accent-color;
-    margin-left: 27px;
+    margin-left: 22px;
 }
 
 .mob-svg-open{
     width: 20px;
     height: 12px;
-    margin-right: 32px;
     background-color: rgba( 0, 0, 0, 0);
     border: 0;
 }
@@ -124,12 +132,8 @@ margin-right: 35px;
     display: flex;
 }
 
-.js-menu-container{
-    @media screen  and (min-width:1279px){
-        display: none;
-    }
-}
 .js-open-menu{
+    position: relative;
     padding: 0;
     border:none;
     background-color:rgba( 0, 0, 0, 0);
@@ -147,17 +151,16 @@ margin-right: 35px;
 }
 
 .js-menu-container{
-    z-index: 1;
     position: fixed;
+    opacity: 0;
     padding-top: 20px;
     top: 0;
     right: 0;
     height: 100vh;
-    width: 250px;
+    min-width: 240px;
     background-color: #E17992;
     overflow-y: auto;
-    box-shadow: -8px 2 20px rgba( 0, 0, 0, .25);
-    opacity: 1;
+    box-shadow: -4px 2 20px rgba(243, 23, 89, 0.904);
     transform: translateY(0%);
     .container{
         flex-direction: column;
@@ -165,11 +168,15 @@ margin-right: 35px;
         justify-content: space-between;
         align-items: flex-start;
     }
-}
-.js-menu-container.is-open{
-    transform: translateX(0%);
+    @media screen  and (min-width:1279px){
+        display: none;
+    }
 }
 
+.is-hidden{
+    opacity: 1;
+    transform: translate(0);
+}
 
 .js-menu{
     width: 100%;
@@ -188,7 +195,7 @@ margin-right: 35px;
     top:0;
     right: 0;
     fill:$white-color;
-    transition: fill 250ms cubic-bezier(0.4 , 0 , 0.2 ,1 );
+    transition: fill 300ms cubic-bezier(0.4 , 0 , 0.2 ,1 );
     cursor: pointer;
 }
 .js-close-menu:hover,
@@ -210,13 +217,15 @@ margin-right: 35px;
     display: flex;
     align-items: center;
     color: $white-color;
-    transition: color 250ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
+    transition: color 300ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s,
+    box-shadow 300ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
     white-space: nowrap;
     
 }
 .mob-menu__link:hover,
 .mob-menu__link:focus{
     color: $accent-color;
+    box-shadow: 2px 4px 4px 2px rgba($color: #f580ac, $alpha: 1.0);
 }
 .mob-btn{
     font-weight: 700;
@@ -234,20 +243,17 @@ margin-right: 35px;
     cursor: pointer;
     background-color: $white-color;
     border-color: rgba( 0, 0, 0, 0);
-    transition: background-color 250ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
+    
+    transition: background-color 300ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s,
+    box-shadow 300ms cubic-bezier(0.4 , 0 , 0.2 ,1 ) 0s;
     white-space: nowrap;
 }
 
 .mob-btn:hover{
     background-color: #ECEBEB;
+    box-shadow: 2px 4px 4px 2px rgba($color:  #f580ac , $alpha: 1.0);
 }
 
-.is-hidden{
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    transform: translate(100%, 100%) scale(0.5);
-}
 .no-scroll{
     overflow: hidden;
 }

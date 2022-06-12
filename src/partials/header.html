@@ -1,8 +1,19 @@
 <header class="header">
     <div class="container header-container">
         <a class="header-logo" href="./index.html">
-            <img class="logo-img" src="./images/logo.png" alt="logo" width="199" height="50">
-        </a>
+            <picture>
+            <source
+                srcset="
+                ./images/logo.png 1x,
+                ./images/logo@2x.png  2x"
+                />
+            <img 
+                class="logo-img" 
+                src="./images/logo.png"
+                alt="logo"
+                width="199"
+                height="50">
+            </picture>
 
         <button
           type="button" 

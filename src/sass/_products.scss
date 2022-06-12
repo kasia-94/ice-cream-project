@@ -1,16 +1,14 @@
-// .products {
-//   padding-top: 121px;
-//   padding-bottom: 98px;
+.products {
+  padding-top: 80px;
 
-//   @media screen and (min-width: 768px) {
-//     padding-top: 122px;
-//     padding-bottom: 112px;
-//   }
-//   @media screen and (min-width: 1280px) {
-//     padding-top: 127px;
-//     padding-bottom: 119px;
-//   }
-// }
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+  }
+}
 
 .products__pre-title {
   margin-bottom: 15px;

@@ -39,6 +39,9 @@
 <symbol id="icon-vector" viewBox="0 0 26 32">
 <path fill="none" stroke="#d41443" stroke-width="6.4" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #d41443)" d="M5.172 3.2l14.169 12.8-14.169 12.8"></path>
 </symbol>
+<symbol id="icon-full-check" viewBox="0 0 32 32">
+<path d="M6.308 16.538l-0.147-0.141-0.147 0.139-2.057 1.95 0.162 0.156 7.605 7.253 0.147-0.141 16.171-15.426-0.162-0.154-2.029-1.935-0.147 0.141-13.98 13.325-5.417-5.167z"></path>
+</symbol>
 </defs>
 </svg>
 

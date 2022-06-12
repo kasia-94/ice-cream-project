@@ -1,153 +1,27 @@
-:root {
-  --white-text: #ffffff;
-  --title-text: #d41443;
-  --accent-color: #ffa5ba;
+// .products {
+//   padding-top: 121px;
+//   padding-bottom: 98px;
 
-  --second-bg: #ffb8ca;
-}
-
-body {
-  font-family: 'DM Sans', sans-serif;
-  color: var(--main-text);
-  font-size: 14px;
-  font-weight: 400;
-  font-style: normal;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-.link {
-  text-decoration: none;
-  font-family: inherit;
-  display: inline-block;
-}
-
-.list {
-  list-style: none;
-  padding-inline-start: 0;
-  margin: 0;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Titan One';
-}
-
-.container {
-  margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 100%;
-
-  @media screen and (min-width: 320px) {
-    width: 320px;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-  }
-}
-
-.pre-title {
-  font-family: Titan One;
-  font-size: 18px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffa5ba;
-}
-@media screen and (min-width: 768px) {
-  .pre-title {
-    font-size: 26px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .pre-title {
-    font-size: 30px;
-    line-height: 1.13;
-  }
-}
-
-.title {
-  font-family: Titan One;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #d41443;
-}
-@media screen and (min-width: 768px) {
-  .title {
-    font-size: 48px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .title {
-    font-size: 58px;
-    line-height: 1.14;
-  }
-}
-
-.products {
-  padding-top: 121px;
-  padding-bottom: 98px;
-
-  @media screen and (min-width: 768px) {
-    padding-top: 122px;
-    padding-bottom: 112px;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 127px;
-    padding-bottom: 119px;
-  }
-}
+//   @media screen and (min-width: 768px) {
+//     padding-top: 122px;
+//     padding-bottom: 112px;
+//   }
+//   @media screen and (min-width: 1280px) {
+//     padding-top: 127px;
+//     padding-bottom: 119px;
+//   }
+// }
 
 .products__pre-title {
   margin-bottom: 15px;
+  text-align: center;
+  color: $secondary-hero-color;
 }
 
 .products__title {
   margin-bottom: 141px;
+  text-align: center;
+  color: $accent-color;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
@@ -202,99 +76,99 @@ h6 {
   }
 
   &:nth-child(1) {
-    background-color: var(--second-bg);
+    background-color: $main-hero-color;
 
     &:before {
-      background-image: url(../img/ice-creammob.png);
+      background-image: url(../images/ice-creammob.png);
 
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(../img/ice-creammob2x.png);
+        background-image: url(../images/ice-creammob2x.png);
       }
 
       @media screen and (min-width: 768px) {
-        background-image: url(../img/ice-creamtab.png);
+        background-image: url(../images/ice-creamtab.png);
 
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url(../img/ice-creamtab2x.png);
+          background-image: url(../images/ice-creamtab2x.png);
         }
       }
       @media screen and (min-width: 1280px) {
-        background-image: url(../img/ice-creamdesc.png);
+        background-image: url(../images/ice-creamdesc.png);
 
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url(../img/ice-creamdesc2x.png);
+          background-image: url(../images/ice-creamdesc2x.png);
         }
       }
     }
   }
 
   &:nth-child(2) {
-    background-color: #f0d1a5;
+    background-color: $product-yellow-color;
 
     &:before {
-      background-image: url(../img/latemob.png);
+      background-image: url(../images/latemob.png);
 
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(../img/latemob2x.png);
+        background-image: url(../images/latemob2x.png);
       }
 
       @media screen and (min-width: 768px) {
-        background-image: url(../img/latetab.png);
+        background-image: url(../images/latetab.png);
 
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url(../img/latetab2x.png);
+          background-image: url(../images/latetab2x.png);
         }
       }
       @media screen and (min-width: 1280px) {
-        background-image: url(../img/latedesc.png);
+        background-image: url(../images/latedesc.png);
 
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url(../img/latedesc2x.png);
+          background-image: url(../images/latedesc2x.png);
         }
       }
     }
   }
 
   &:nth-child(3) {
-    background-color: #c2e297;
+    background-color: $product-green-color;
 
     &:before {
-      background-image: url(../img/milkmob.png);
+      background-image: url(../images/milkmob.png);
 
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url(../img/milkmob2x.png);
+        background-image: url(../images/milkmob2x.png);
       }
 
       @media screen and (min-width: 768px) {
-        background-image: url(../img/milktab.png);
+        background-image: url(../images/milktab.png);
 
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url(../img/milktab2x.png);
+          background-image: url(../images/milktab2x.png);
         }
       }
       @media screen and (min-width: 1280px) {
-        background-image: url(../img/milkdesk.png);
+        background-image: url(../images/milkdesk.png);
 
         @media (min-device-pixel-ratio: 2),
           (min-resolution: 192dpi),
           (min-resolution: 2dppx) {
-          background-image: url(../img/milkdesk2x.png);
+          background-image: url(../images/milkdesk2x.png);
         }
       }
     }
@@ -331,13 +205,10 @@ h6 {
   padding-top: 161px;
 
   font-family: Titan One;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.15;
+  @include font(400, 20px, 1.15, 0.04em);
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--white-text);
+  color: $white-color;
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 70px;
@@ -370,12 +241,9 @@ h6 {
   padding-left: 40px;
   padding-right: 40px;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.52;
+  @include font(700, 14px, 1.52, 0.04em);
   text-align: center;
-  letter-spacing: 0.04em;
-  color: var(--white-text);
+  color: $white-color;
 
   @media screen and (min-width: 768px) {
     padding-left: 11px;
@@ -396,12 +264,9 @@ h6 {
   height: auto;
   padding-left: 40px;
   padding-right: 40px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.52;
+  @include font(700, 14px, 1.52, 0.04em);
   text-align: center;
-  letter-spacing: 0.04em;
-  color: var(--white-text);
+  color: $white-color;
 
   @media screen and (min-width: 768px) {
     padding-left: 11px;
@@ -428,7 +293,7 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--white-text);
+  background-color: $white-color;
   border: none;
   margin: 0 auto;
   margin-top: 30px;
@@ -452,5 +317,5 @@ h6 {
   }
 }
 .products__icon {
-  fill: #d41443;
+  fill: $accent-color;
 }

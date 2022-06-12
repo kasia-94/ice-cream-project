@@ -158,10 +158,10 @@ img {
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .about__bg {
     background-image: url(../images/bg-milk-sm2x.png);
-  }
 }
 
 @media screen and (min-width: 768px) {
+
   .about__bg {
     background-image: url(../images/bg-milk-lg.png);
   }
@@ -217,4 +217,4 @@ img {
   background: #ffffff;
   border-radius: 22px;
 }
-/*# sourceMappingURL=main.css.map */
+}

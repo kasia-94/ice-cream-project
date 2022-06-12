@@ -1,3 +1,77 @@
-.hero__buttons {
-  @extend %flex-centered;
+.hero {
+  background-color: $main-hero-color;
+}
+
+.hero-container {
+  position: relative;
+}
+
+.hero__title {
+  margin-top: 128px;
+}
+
+.hero__main-title {
+  font-family: 'Titan One';
+  text-transform: uppercase;
+  color: $accent-color;
+  @include font(400, 48px, 0.95, null);
+
+  @media screen and (min-width: 768px) {
+    @include font(400, 34px, 0.91, 0.04em);
+  }
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 58px, 0.89, 0.04em);
+  }
+
+  &--first {
+    @include font(400, 26px, 1.15, 0.04em);
+    color: $white-color;
+
+    @media screen and (min-width: 768px) {
+      @include font(400, 22px, 1.13, 0.04em);
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include font(400, 38px, 1.15, 0.04em);
+    }
+  }
+}
+
+.hero-buttons {
+  margin-top: 20px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  @include font(400, 8px, 1.25, null);
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 24px;
+    @include font(400, 14px, 1.28, null);
+  }
+
+  &--first {
+    padding: 0 14px;
+    height: 24px;
+    color: $white-color;
+    background-color: $accent-color;
+    border-radius: 20px;
+
+    @media screen and (min-width: 1280px) {
+      padding: 0 23.5px;
+      height: 40px;
+    }
+  }
+
+  &--second {
+    padding: 0 14px;
+    height: 24px;
+    color: $accent-color;
+    background-color: $white-color;
+    border-radius: 20px;
+
+    @media screen and (min-width: 1280px) {
+      padding: 0 23.5px;
+      height: 40px;
+    }
+  }
 }

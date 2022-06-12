@@ -1,6 +1,10 @@
 .header {
   position: relative;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 40px;
+  }
 }
 
 .header-container {

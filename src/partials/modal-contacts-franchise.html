@@ -1,0 +1,62 @@
+ <!-- Модальное окно - franchise -->
+    <div class="franchise-backdrop is-hidden" franchise-modal>
+        <div class="franchise-modal">
+            <button type="button" class="franchise-modal__button-close" franchise-modal-close>
+                <svg class="franchise-modal__icon-close" width="18" height="18">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="franchise-modal__title">In which city do you plan to open IceCream?</p>
+    
+            <!--Форма в модальном окне-franchise-->
+            <form class="franchise-form">
+                <div class="franchise-form__field">
+                    <label class="franchise-form__label" for="user-city">City ​​name</label>
+                    <div class="franchise-form__wrap">
+                        <input type="text" class="franchise-form__input" name="name" id="user-city" required />
+                    </div>
+                </div>
+
+                <div class="franchise-form__field">
+                    <label class="franchise-form__label" for="user-name">Your name</label>
+                    <div class="franchise-form__wrap">
+                        <input type="text" class="franchise-form__input" name="name" id="user-name" required />
+                    </div>
+                </div>
+    
+                <div class="franchise-form__field">
+                    <label class="franchise-form__label" for="user-tel">Phone number</label>
+                    <div class="franchise-form__wrap">
+                        <input type="tel" class="franchise-form__input" name="tel" id="user-tel" required />
+                    </div>
+                </div>
+    
+                <div class="franchise-form__field">
+                    <label class="franchise-form__label" for="user-email">Email</label>
+                    <div class="franchise-form__wrap">
+                        <input type="email" class="franchise-form__input" name="email" id="user-email" required />
+                    </div>
+                </div>
+    
+                <div class="franchise-form__textarea-field">
+                    <label class="franchise-form__label" for="user-email">Your comment</label>
+                    <textarea class="franchise-form__text" name="text" id="user-text" placeholder="Enter text"></textarea>
+                </div>
+    
+                <div class="franchise-form__checkbox">
+                    <input type="checkbox" class="franchise-form__checkbox-input visually-hidden" id="franchise-form-checkbox" name="checkbox"
+                        value="checkbox" />
+                    <label class="franchise-form__checkbox-label" for="franchise-form-checkbox">
+                        <span class="franchise-form__checkbox-wrap">
+                            <svg class="franchise-form__checkbox-icon" width="16" height="15">
+                                <use href="./images/icons.svg#icon-full-check"></use>
+                            </svg> </span>I agree to the&#xa0;<span><a class="franchise-form__checkbox-link"
+                                href="">processing of personal data</a></span>
+                    </label>
+                </div>
+                <button class="franchise-form__button franchise-form__button-submit" type="submit">
+                    Отправить
+                </button>
+            </form>
+        </div>
+    </div>

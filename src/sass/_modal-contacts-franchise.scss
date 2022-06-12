@@ -1,0 +1,257 @@
+/*------------Модальное окно-franchise-----------*/
+
+.franchise-backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: rgba(255, 245, 246, 0.718);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.franchise-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 110px 15px 25px 15px;
+    width: 250px;
+      
+    background-color: #deebcc;
+    box-shadow: 0px 1px 5px rgba(100, 145, 50, 0.644),  0px 1px 1px rgba(100, 145, 50, 0.644), 0px 2px 1px rgba(100, 145, 50, 0.644);
+    border-radius: 4px;
+    transition: transform 500ms cubic-bezier(0.09, 0.62, 0.73, 1);
+    transform: translate(-50%, -50%) rotate(0deg);
+
+    @media screen and (min-width: 768px) {
+        width: 500px;
+        padding: 100px 40px 40px 40px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        width: 550px;
+        padding: 120px 40px 40px 40px;
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+
+    .franchise-modal {
+        transform: rotate(90deg);
+    }
+}
+
+.franchise-modal__button-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 30px;
+    height: 30px;
+
+    background-color: $modal-main-color;
+    border-radius: 50%;
+    border: 1px solid $modal-main-color;
+    @extend %flex-centered;
+    cursor: pointer;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    background-color: $modal-accent-color;
+    }
+}
+
+.franchise-modal__title {
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Titan One';
+    @include font(700, 16px, 1.2, 0.01em);
+    color: $modal-main-color;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+         @include font(null, 22px, 1.2, 0.04em);
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: 65px;
+        @include font(null, 24px, 1.5, null);
+    }
+}
+
+/*------------Форма в модальном окне-franchise-----------*/
+
+.franchise-form__field {
+    margin-bottom: 10px;
+}
+
+.franchise-form__input {
+    padding-left: 7px;
+    width: 100%;
+    height: 25px;
+    border: 1px solid $secondary-hero-color;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 768px) {
+        height: 40px;
+        padding-left: 15px;
+    }
+
+    &:hover,
+    &:focus {
+        border-color: $modal-accent-color;
+
+        +.form__icon {
+            fill: $modal-accent-color;
+        }
+    }
+}
+
+.franchise-form__label {
+    display: block;
+    margin-bottom: 4px;
+    @include font(400, 12px, 1.67, 0.01em);
+    color: $secondary-text-color;
+
+    @media screen and (min-width: 768px) {
+        @include font(500, 14px, null, null);
+    }
+}
+
+.franchise-form__textarea-field {
+    margin-bottom: 10px;
+}
+
+.franchise-form__text {
+    padding: 12px 15px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid $secondary-hero-color;
+    border-radius: 4px;
+    resize: none;
+    outline: none;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        border-color: $modal-accent-color;
+    }
+
+    &:hover::placeholder,
+    &:focus::placeholder {
+        color: $modal-accent-color;
+    }
+}
+
+.franchise-form__text::placeholder {
+    @include font(400, 14px, 1.67, 0.01em);
+    color: rgba(117, 117, 117, 0.5);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.franchise-form__wrap {
+    position: relative;
+}
+
+.franchise-form__icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.franchise-form__checkbox {
+    margin-bottom: 15px;
+}
+
+.franchise-form__checkbox-label {
+    @extend %flex-centered;
+    @include font(500, 12px, 1.2, 0.03em);
+    color: $secondary-text-color;
+
+    @media screen and (min-width: 768px) {
+         @include font(500, 14px, 1.67, 0.01em);
+    }
+
+    &:hover {
+        .franchise-form__checkbox-wrap {
+            border: 2px solid $modal-accent-color;
+        }
+    }
+}
+
+.franchise-form__checkbox-link {
+    color: $modal-accent-color;
+}
+
+.franchise-form__checkbox-wrap {
+    @extend %flex-centered;
+    width: 16px;
+    height: 15px;
+    border: 2px solid $secondary-hero-color;
+    border-radius: 3px;
+    margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.franchise-form__checkbox-input:focus+.franchise-form__checkbox-label {
+    .franchise-form__checkbox-wrap {
+        border: 2px solid $modal-accent-color;
+    }
+}
+
+.franchise-form__checkbox-icon {
+    fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.franchise-form__checkbox-input:checked+.franchise-form__checkbox-label {
+    .franchise-form__checkbox-wrap {
+        background-color: $modal-main-color;
+        border: none;
+    }
+}
+
+.franchise-form__checkbox-input:checked + .franchise-form__checkbox-label {
+    .franchise-form__checkbox-icon {
+        fill: $white-color;
+    }
+}
+
+.franchise-form__button-submit {
+    @extend %flex-centered;
+    @include font(700, 16px, 1.3, null);
+    border-radius: 22px;
+    border-style: none;
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+    min-height: 50px;
+    min-width: 200px;
+
+    background-color: $secondary-hero-color;
+    box-shadow: 0px 4px 4px $menu-background-color;
+    color: $white-color;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background: $modal-accent-color;
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}

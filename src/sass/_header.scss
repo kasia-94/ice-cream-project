@@ -11,19 +11,21 @@
 
 .logo-img{
     padding: 8px 0;
+    margin-left: 0;
+    
     @media screen  and (min-width:320px) {
-        margin-left: 0;
         margin-right: 61px;
     }
     @media screen  and (min-width:768px) {
         margin-right: 293px;
-        margin-left: 0;
     }
     @media screen  and (min-width:1280px) {
         margin-right: 175px;
-        margin-left: 0;
 
     }
+}
+.header-logo{
+    animation: logo-img-anime 2s 0.75s infinite;
 }
 
 .header-navigation{
@@ -43,9 +45,7 @@
     white-space: nowrap;
 }
 
-.nav-menu__item{
-    padding: 11px 0px;
-}
+
 .nav-menu__link:hover,
 .nav-menu__link:focus{
     color: $accent-color;
@@ -58,10 +58,12 @@
 .nav-menu .nav-menu__item:not(:last-child){
 margin-right: 35px;
 }
-.nav-menu__item:nth-child(5){
+.nav-menu .nav-menu__item:nth-child(5){
     margin-right: 174px;
-    }
-
+}
+.nav-menu__item{
+    padding: 11px 0px;
+}
 .header-btn{
     padding: 11px 0px;
     display: block;
@@ -168,6 +170,7 @@ margin-right: 35px;
     transform: translateX(0%);
 }
 
+
 .js-menu{
     width: 100%;
 }
@@ -238,6 +241,7 @@ margin-right: 35px;
 .mob-btn:hover{
     background-color: #ECEBEB;
 }
+
 .is-hidden{
     opacity: 0;
     pointer-events: none;

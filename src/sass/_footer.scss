@@ -86,9 +86,7 @@
 }
 
 .footer-soc__link{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @extend %flex-centered;
     
     width: 34px;
     height: 34px;
@@ -109,9 +107,7 @@
 
     margin-bottom: 56px;
 
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 1.86;
+    @include font (700, 12px, 1.86, null);
 
     color: #000000;
 

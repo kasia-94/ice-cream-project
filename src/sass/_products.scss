@@ -210,6 +210,7 @@
 
   @media screen and (min-width: 1280px) {
     margin-bottom: 70px;
+    @include font(400, 30px, 1.13, 0.04em);
   }
 
   &::after {

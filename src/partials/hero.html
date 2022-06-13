@@ -20,8 +20,8 @@
             <div class="hero__title">
                 <h1 class="hero__main-title"><span class="hero__main-title--first"> Ice cream made with </span>passion</h1>
                 <div class="hero__buttons">
-                    <button type="button" class="hero__buttons--first" href="#"> Products </button>
-                    <button type="button" class="hero__buttons--second" href="#"> How it's made </button>
+                    <button type="button" class="hero__buttons--first"><a class="link" href="#products">Products</a></button>
+                    <button type="button" class="hero__buttons--second"><a class="link" href="#about">How it's made</a></button>
                 </div>
             </div>
             <div class="hero__places">
@@ -46,12 +46,15 @@
                 <p class="hero__info-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 </p>
-                <details class="hero__info-details details">
-                    <summary class="details__icon"></summary>
-                    <p class="details__text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                    </p>
-                </details>
+                <input class="info__checkbox" type="checkbox" id="info" value="additional info" />
+                <label class="info__label" for="info">
+                    <svg class="info__icon" width="13" height="13">
+                        <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+                    </svg>
+                </label>
+                <p class="info__additional">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                </p>
             </div>
         </div>
     </div>

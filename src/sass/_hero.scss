@@ -27,6 +27,7 @@
 .hero__main {
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   @media screen and (max-width: 767px) {
     margin-top: 111px;
@@ -154,6 +155,8 @@
 }
 
 .hero__places-number {
+  position: relative;
+  z-index: 1;
   font-family: 'Titan One';
   font-style: normal;
   @include font(400, 28px, 1.14, 0.04em);
@@ -202,7 +205,7 @@
   width: 114px;
   font-family: 'DM Sans';
   font-style: normal;
-  @include font(400, 8px, 1.25, null);
+  @include font(400, 12px, 1.25, null);
   color: $white-color;
 
   @media screen and (min-width: 1280px) {

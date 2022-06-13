@@ -1,0 +1,174 @@
+.reviews {
+    
+    &__title{
+        text-align: center;
+    }
+    &--bg {
+             background-color: $white-color;
+    
+         }
+    &__container{
+        
+       @media screen and (min-width:768px) {
+            padding: 0px 74px;
+        
+        }
+        @media screen and (min-width:1280px) {
+               padding: 0px 123px;
+    
+        }
+       
+    }
+    @media screen and (min-width:320px) and (max-width :767px){
+        &--mobile{
+            padding-bottom: 24px;
+        }
+        
+    }
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__photo {
+            display: block;
+            border-radius: 50%;
+            margin-bottom: 32px;
+            @media screen and (min-width:768px) {
+                    margin-bottom: 20px;
+                }
+            @media screen and (min-width:1280px) {
+                 margin-bottom: 16px;
+            }
+        }
+    &__box {
+            padding: 43px 50px 17px 50px;
+            background-color: $slide-box-bg-color;
+            position: relative;
+            margin-bottom: 36px;
+            @media screen and (min-width:768px) {
+                    padding: 37px 6px 37px;
+                    margin-bottom: 24px;
+                }
+            @media screen and (min-width:1280px) {
+                    padding: 47px 106px 31px;
+                    margin-bottom: 36px;
+                }
+            &::after{
+                display: block;
+                content: "";
+                position: absolute;
+                bottom: -20px;
+                left: 50%;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: $slide-text-marker-color;
+                box-shadow: 12px 0px 0 0 $slide-text-marker-color,
+                                -12px 0px 0 0 $slide-text-marker-color;
+                @media screen and (min-width:768px) {
+                    bottom: -8px;
+                    }
+                @media screen and (min-width:768px) {
+                    bottom: -20px;
+                    }
+               
+
+            }
+        }
+    &__text {
+            @include font(500, 12px, 2.58, null);
+            color: $black-color;
+            text-align: center;
+            margin: 0;
+            padding-left: 20px;
+            padding-right: 13px;
+            background-image: repeating-linear-gradient(to bottom,
+                    rgba(255,255,255,0),
+                    rgba(255, 255, 255, 0) 30px,
+                    $light-grey 30px,
+                    $light-grey 31px);
+            @media screen and (min-width:768px) {
+                padding-left: 44px;
+                padding-right: 50px;
+                @include font (null, 14px, 2.21, 0.04em);
+            }
+            @media screen and (min-width:1280px) {
+                            padding-left: 35px;
+                            padding-right: 35px;
+                            @include font (null, 16px, 1.86, null);
+                            background-image: repeating-linear-gradient(rgba(255, 255, 255, 0),
+                             rgba(255, 255, 255, 0) 29px,
+                              $light-grey 29px, 
+                                 $light-grey 30px);
+            }
+            &::before{
+                display: block;
+                content: "";
+                width: 54px;
+                height: 40px;
+                background-image: url(../images/quotes-min.png);
+                position: absolute;
+                top: -12px;
+                left: 3px;
+                @media screen and (min-width:768px) {
+                       width: 60px;
+                       top: -17px;
+                       left: 0;
+                    background-image: url(../images/quotes-768-min.png);
+                    }
+                @media screen and (min-width:768px) {
+                       width: 54px;
+                       top: -17px;
+                       left: 0;
+                    background-image: url(../images/quotes-min.png);
+                    }
+            }
+            span {
+                position: relative;
+                
+            }
+        }
+    &__thumb{position: relative;}
+    &__title{
+        @include font (500, 14px, 1.86, null);
+        color: $black-color;
+        @media screen and (min-width:768px) {
+                
+                @include font (null, 16px, 1.86, null);
+            }
+        @media screen and (min-width:1280px) {
+                
+                @include font (null, 20px, 1.86, null);
+            }
+
+    }
+}
+.swiper {
+    width: 100%;
+    height: auto;
+}
+.swiper-pagination{
+    position: static;
+    margin-top: 32px;
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0px 6px;
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    background-color: $swiper-pagination-bullet-color;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-image: url(../images/active-bullet.svg);
+    background-color: transparent;
+    border-radius: 0;
+    
+}
+.swiper-wrapper{
+    overflow: hidden;
+}

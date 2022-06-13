@@ -6,8 +6,7 @@
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -138,4 +137,84 @@ img {
     letter-spacing: 0.04em;
   }
 }
-/*# sourceMappingURL=main.css.map */
+
+.about {
+  background-color: #fff5f6;
+  padding: 40px 20px;
+}
+
+.about__bg {
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 485px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .about__bg {
+    background-image: url(../images/bg-milk-sm.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about__bg {
+    background-image: url(../images/bg-milk-sm2x.png);
+}
+
+@media screen and (min-width: 768px) {
+
+  .about__bg {
+    background-image: url(../images/bg-milk-lg.png);
+  }
+}
+
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .about__bg {
+    background-image: url(../images/bg-milk-lg2x.png);
+  }
+}
+
+.about__label {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.about__title {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.about-txt {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+}
+
+.about-txt__first-p {
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+.about-txt__second-p {
+  margin-bottom: 20px;
+}
+
+.about-txt__third-p {
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 176px;
+  height: 44px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28;
+  background: #ffffff;
+  border-radius: 22px;
+}
+}

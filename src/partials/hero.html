@@ -1,5 +1,21 @@
 <section class="hero section">
     <div class="container hero-container">
+        <div class="hero-thumb--first">
+            <picture>
+                <source srcset="./images/ice-cream-desk.png 1x, ./images/ice-cream-desk-2x.png 2x" media="(min-width: 1280px)">
+                <source srcset="./images/ice-cream-tab.png 1x, ./images/ice-cream-tab-2x.png 2x" media="(min-width: 768px)">
+                <source srcset="./images/ice-cream-mob.png 1x, ./images/ice-cream-mob-2x.png 2x" media="(min-width: 320px)">
+                <img src="./images/ice-cream-mob.png" alt="ice-cream">
+            </picture>
+        </div>
+        <div class="hero-thumb--second">
+            <picture>
+                <source srcset="./images/hero-tasty-desk.png 1x, ./images/hero-tasty-desk-2x.png 2x"
+                    media="(min-width: 1280px)">
+                <source srcset="./images/hero-tasty-tab.png 1x, ./images/hero-tasty-tab-2x.png 2x" media="(min-width: 768px)">
+                <img src="./images/hero-tasty-tab.png" alt="ice-cream">
+            </picture>
+        </div>
         <div class="hero__main">
             <div class="hero__title">
                 <h1 class="hero__main-title"><span class="hero__main-title--first"> Ice cream made with </span>passion</h1>
@@ -11,26 +27,32 @@
             <div class="hero__places">
                 <ul class="hero__places-list list">
                     <li class="hero__places-item">
-                        <p class="hero__places-number">16</p>
-                        <p class="hero__places-type">cafes</p>
+                        <div>
+                            <p class="hero__places-number">16</p>
+                            <p class="hero__places-type">cafes</p>
+                        </div>
                     </li>
                     <li class="hero__places-item">
-                        <p class="hero__places-number">23</p>
-                        <p class="hero__places-type">food trucks</p>
+                        <div>
+                            <p class="hero__places-number">23</p>
+                            <p class="hero__places-type">food trucks</p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="hero__info">
-            <p class="hero__info-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            </p>
-            <details class="hero__info-details details">
-                <summary class="details__icon"></summary>
-                <p class="details__text">
+            <div>
+                <p class="hero__info-text">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 </p>
-            </details>
+                <details class="hero__info-details details">
+                    <summary class="details__icon"></summary>
+                    <p class="details__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    </p>
+                </details>
+            </div>
         </div>
     </div>
 </section>

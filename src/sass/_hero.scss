@@ -27,6 +27,7 @@
 .hero__main {
   display: flex;
   justify-content: space-between;
+  position: relative;
 
   @media screen and (max-width: 767px) {
     margin-top: 111px;
@@ -156,6 +157,8 @@
 }
 
 .hero__places-number {
+  position: relative;
+  z-index: 1;
   font-family: 'Titan One';
   font-style: normal;
   @include font(400, 28px, 1.14, 0.04em);
@@ -200,6 +203,10 @@
   }
 }
 
+.info-text {
+  display: flex;
+}
+
 .hero__info-text {
   width: 114px;
   font-family: 'DM Sans';
@@ -219,15 +226,15 @@
 
 .info__additional {
   display: none;
-  width: 114px;
+  width: 144px;
   font-family: 'DM Sans';
   font-style: normal;
-  @include font(400, 8px, 1.25, null);
-  color: $secondary-text-color;
+  @include font(400, 12px, 1.25, null);
+  color: $accent-color;
 
   @media screen and (min-width: 1280px) {
-    width: 200px;
-    @include font(400, 14px, 1.28, null);
+    width: 280px;
+    @include font(400, 20px, 1.28, null);
   }
 }
 

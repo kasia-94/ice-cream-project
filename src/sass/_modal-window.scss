@@ -21,11 +21,19 @@
 
 .modal {
   position: absolute;
+  z-index: 6;
   width: 100%;
   max-width: 320px;
   height: 570px;
   background-color: $menu-background-color;
   border-radius: 4px;
+
+   @media screen and (min-width:321px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .modal__top {

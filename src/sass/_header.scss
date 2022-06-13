@@ -151,7 +151,7 @@
 
 .js-menu-container {
   position: fixed;
-  opacity: 0;
+  opacity: 1;
   padding-top: 20px;
   top: 0;
   right: 0;
@@ -159,8 +159,10 @@
   min-width: 240px;
   background-color: #e17992;
   overflow-y: auto;
-  transform: translateX(100%);
+  transform: translateY(0%);
+  z-index: 5;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   .container {
     flex-direction: column;
     height: 100%;
@@ -172,7 +174,7 @@
   }
 }
 
-.is-hidden {
+.js-menu-container.is-hidden {
   opacity: 1;
   transform: translate(0);
 }

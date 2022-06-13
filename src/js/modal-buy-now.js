@@ -9,12 +9,19 @@
   };
 
   refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.openModalBtnMenu.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
-
+  
   function toggleModal() {
+    refs.modal.classList.toggle("is-hidden");
+    refs.body.classList.toggle("no-scroll");
+  }
+
+  refs.openModalBtnMenu.addEventListener("click", toggleModalMenu);
+
+  function toggleModalMenu() {
     refs.menu.classList.toggle("is-hidden");
     refs.modal.classList.toggle("is-hidden");
     refs.body.classList.toggle("no-scroll");
   }
+
 })();

@@ -1,0 +1,86 @@
+<header id="home" class="header">
+  <div class="header-container container">
+    <a class="header-logo" href="./index.html">
+      <picture>
+        <source srcset="./images/logo.png 1x, ./images/logo@2x.png 2x" />
+        <img
+          class="logo-img"
+          src="./images/logo.png"
+          alt="logo"
+          width="199"
+          height="50"
+        />
+      </picture>
+    </a>
+    <button type="button" class="js-open-menu">
+      <svg class="mob-svg-open">
+        <use href="./images/icons.svg#icon-burger"></use>
+      </svg>
+    </button>
+
+    <div class="header-navigation">
+      <ul class="nav-menu list">
+        <li class="nav-menu__item">
+          <a class="nav-menu__link link current" href="#home">Home</a>
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link link" href="#about">About us</a>
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link link" href="#how">How it’s made?</a>
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link link" href="#products" #>Our products</a>
+        </li>
+        <li class="nav-menu__item">
+          <a class="nav-menu__link link" href="#contacts">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <button class="header-btn" type="button" data-modal-open>
+      Buy now
+      <svg class="vector-svg" width="8" height="10">
+        <use href="./images/icons.svg#icon-vector"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="js-menu-container">
+    <div class="container">
+      <div class="js-menu">
+        <button type="button" class="js-close-menu">
+          <svg class="mob-close" width="14" height="14">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <button data-open-modal class="mob-btn" type="button">
+            Buy now
+            <svg class="vector-svg" width="8" height="10">
+              <use class="v-svg" href="./images/icons.svg#icon-vector"></use>
+            </svg>
+          </button>
+
+          <ul class="mob-menu list">
+            <li class="mob-menu__item">
+              <a class="mob-menu__link current link" href="#home">Home</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="#about">About us</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="#how">How it’s made?</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="#products">Our products</a>
+            </li>
+            <li class="mob-menu__item">
+              <a class="mob-menu__link link" href="#contacts">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>

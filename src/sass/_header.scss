@@ -289,5 +289,6 @@
   .js-menu-container.is-hidden {
     opacity: 1;
     visibility: visible;
+    pointer-events: inherit;
    
   }

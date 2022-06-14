@@ -60,6 +60,21 @@
   @media screen and (min-width: 1280px) {
     margin-bottom: 60px;
   }
+  transform: scale(1);
+  animation: pulse 3000ms ease-in-out 3;
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
 }
 
 .about__picture {

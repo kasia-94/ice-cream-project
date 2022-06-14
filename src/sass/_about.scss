@@ -136,6 +136,7 @@
   height: 100vh;
   top: 0;
   left: 0;
+  opacity: 1;
   background-color: rgba(0, 0, 0, 0.2);
   overflow-y: auto;
   z-index: 21;
@@ -143,7 +144,7 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.about-backdrop.is-hidden .about-modal {
+.about-backdrop.about-is-hidden .about-modal {
   transform: scale(0.1);
 }
 
@@ -162,7 +163,7 @@
   }
 }
 
-.is-hidden {
+.about-is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;

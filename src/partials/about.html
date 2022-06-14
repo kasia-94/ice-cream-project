@@ -5,18 +5,18 @@
     <div class="about-content">
       <picture class="about__picture">
         <source
-          media="(max-width: 767px)"
-          srcset="./images/cow-sm.png 1x, ./images/cow-sm2x.png 2x"
+          media="(min-width: 1200px)"
+          srcset="./images/cow-lg.png 1x, ./images/cow-lg2x.png 2x"
         />
         <source
           media="(min-width: 768px)"
           srcset="./images/cow-md.png 1x, ./images/cow-md2x.png 2x"
         />
         <source
-          media="(min-width: 1280px)"
-          srcset="./images/cow-lg.png 1x, ./images/cow-lg2x.png 2x"
+          media="(max-width: 767px)"
+          srcset="./images/cow-sm.png 1x, ./images/cow-sm2x.png 2x"
         />
-        <img src="./images/cow-lg.png" alt="cow and milk" />
+        <img src="./images/cow-md.png" alt="cow and milk" />
       </picture>
       <div class="about-txt">
         <p class="about-txt__first-p">
@@ -43,7 +43,7 @@
   </div>
 </section>
 <!-- Модальное окно -->
-<div class="about-backdrop is-hidden" data-modal-about>
+<div class="about-backdrop about-is-hidden" data-modal-about>
   <div class="about-modal">
     <p class="about-modal__title">Ice cream production</p>
     <p class="about-modal__txt">

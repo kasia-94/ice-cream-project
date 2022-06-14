@@ -1,24 +1,56 @@
-<section class="hero section">
+<section class="hero section" id="home">
   <div class="container hero-container">
     <div class="hero-thumb--first">
       <picture>
-        <source srcset="./images/ice-cream-desk.png 1x, ./images/ice-cream-desk-2x.png 2x" media="(min-width: 1280px)">
-        <source srcset="./images/ice-cream-tab.png 1x, ./images/ice-cream-tab-2x.png 2x" media="(min-width: 768px)">
-        <source srcset="./images/ice-cream-mob.png 1x, ./images/ice-cream-mob-2x.png 2x" media="(min-width: 320px)">
-        <img src="./images/ice-cream-mob.png" alt="ice-cream">
+        <source
+          srcset="
+            ./images/ice-cream-desk.png    1x,
+            ./images/ice-cream-desk-2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/ice-cream-tab.png    1x,
+            ./images/ice-cream-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="
+            ./images/ice-cream-mob.png    1x,
+            ./images/ice-cream-mob-2x.png 2x
+          "
+          media="(min-width: 320px)"
+        />
+        <img src="./images/ice-cream-mob.png" alt="ice-cream" />
       </picture>
     </div>
     <div class="hero-thumb--second">
       <picture>
-        <source srcset="./images/hero-tasty-desk.png 1x, ./images/hero-tasty-desk-2x.png 2x"
-          media="(min-width: 1280px)">
-        <source srcset="./images/hero-tasty-tab.png 1x, ./images/hero-tasty-tab-2x.png 2x" media="(min-width: 768px)">
-        <img src="./images/hero-tasty-tab.png" alt="ice-cream">
+        <source
+          srcset="
+            ./images/hero-tasty-desk.png    1x,
+            ./images/hero-tasty-desk-2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/hero-tasty-tab.png    1x,
+            ./images/hero-tasty-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <img src="./images/hero-tasty-tab.png" alt="ice-cream" />
       </picture>
     </div>
     <div class="hero__main">
       <div class="hero__title">
-        <h1 class="hero__main-title"><span class="hero__main-title--first"> Ice cream made with </span>passion</h1>
+        <h1 class="hero__main-title">
+          <span class="hero__main-title--first"> Ice cream made with </span
+          >passion
+        </h1>
         <div class="hero__buttons">
           <a class="hero__buttons--first link" href="#products">Products</a>
           <a class="hero__buttons--second link" href="#about">How it's made</a>
@@ -46,14 +78,20 @@
         <p class="hero__info-text">
           Good taste is important. Honest ingredients, even more so.
         </p>
-        <input class="info__checkbox" type="checkbox" id="info" value="additional info" />
+        <input
+          class="info__checkbox"
+          type="checkbox"
+          id="info"
+          value="additional info"
+        />
         <label class="info__label" for="info">
           <svg class="info__icon" width="13" height="13">
             <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
           </svg>
         </label>
         <p class="info__additional">
-          Which is why we make it our mission to bring you the most delightful of ice creams.
+          Which is why we make it our mission to bring you the most delightful
+          of ice creams.
         </p>
       </div>
     </div>

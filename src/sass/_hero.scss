@@ -211,7 +211,7 @@
   width: 114px;
   font-family: 'DM Sans';
   font-style: normal;
-  @include font(400, 8px, 1.25, null);
+  @include font(400, 12px, 1.25, null);
   color: $white-color;
 
   @media screen and (min-width: 1280px) {

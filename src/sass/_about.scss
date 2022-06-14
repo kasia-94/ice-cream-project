@@ -152,7 +152,7 @@
   padding: 20px 20px;
   max-width: 320px;
   min-height: 500px;
-  background-color: $menu-background-color;
+  background-color: #deebcc;
   border-radius: 24px;
   @extend %flex-column;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -190,7 +190,7 @@
   font-family: 'DM Sans';
   font-style: normal;
   @include font(500, 12px, 1.58, null);
-  color: #ffffff;
+  color: #907e82;
 
   @media screen and(min-width: 768px) {
     @include font(500, 14px, 1.78, 0.04em);

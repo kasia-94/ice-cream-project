@@ -1,0 +1,320 @@
+.hero {
+  background-color: $main-hero-color;
+  background-image: url(../images/hero-circle.svg);
+  background-repeat: no-repeat;
+  background-position: 36px 83px;
+  background-size: 346px 344px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 102px;
+    padding-bottom: 16px;
+    background-position: 248px 43px;
+    background-size: 346px 344px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 147px;
+    padding-bottom: 60px;
+    background-position: 517px 54px;
+    background-size: 534px 534px;
+  }
+}
+
+.hero-container {
+  position: relative;
+}
+
+.hero__main {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 111px;
+    margin-bottom: 127px;
+  }
+}
+
+.hero__main-title {
+  width: 218px;
+  font-family: 'Titan One';
+  text-transform: uppercase;
+  color: $accent-color;
+  @include font(400, 48px, 0.95, null);
+
+  @media screen and (min-width: 768px) {
+    width: 166px;
+    @include font(400, 34px, 0.91, 0.04em);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 277px;
+    @include font(400, 58px, 0.89, 0.04em);
+  }
+
+  &--first {
+    @include font(400, 26px, 1.15, 0.04em);
+    color: $white-color;
+
+    @media screen and (min-width: 768px) {
+      @include font(400, 22px, 1.13, 0.04em);
+    }
+
+    @media screen and (min-width: 1280px) {
+      @include font(400, 38px, 1.15, 0.04em);
+    }
+  }
+}
+
+.hero__buttons {
+  margin-top: 20px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  @include font(400, 8px, 1.25, null);
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 24px;
+    @include font(400, 14px, 1.28, null);
+  }
+
+  &--first {
+    padding: 0 14px;
+    height: 24px;
+    color: $white-color;
+    background-color: $accent-color;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1280px) {
+      padding: 0 23.5px;
+      height: 40px;
+    }
+  }
+
+  &--second {
+    padding: 0 14px;
+    height: 24px;
+    color: $accent-color;
+    background-color: $white-color;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1280px) {
+      padding: 0 23.5px;
+      height: 40px;
+    }
+  }
+
+  &--first:hover,
+  &--first:focus {
+    background-color: $slide-text-marker-color;
+  }
+
+  &--second:hover,
+  &--second:focus {
+    background-color: #ecebeb;
+  }
+}
+
+.hero__places {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+}
+
+.hero__places-item {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  margin-bottom: 15px;
+  text-align: right;
+
+  &::after {
+    @media screen and (min-width: 768px) {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 80%;
+      width: 16px;
+      height: 16px;
+      background-image: url(../images/hero-white-circle.svg);
+      background-repeat: no-repeat;
+      background-size: 16px 16px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+    }
+  }
+}
+
+.hero__places-number {
+  position: relative;
+  z-index: 1;
+  font-family: 'Titan One';
+  font-style: normal;
+  @include font(400, 28px, 1.14, 0.04em);
+  text-transform: uppercase;
+  color: #d41443;
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 46px, 1.15, 0.04em);
+  }
+}
+
+.hero__places-type {
+  font-family: 'DM Sans';
+  font-style: normal;
+  @include font(400, 8px, 1.25, null);
+  color: #ffffff;
+
+  @media screen and (min-width: 1280px) {
+    @include font(400, 14px, 1.28, null);
+  }
+}
+
+.hero__info {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 20px;
+
+    &::before {
+      content: url(../images/hero-milk-tab.png);
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 40px;
+
+    &::before {
+      content: url(../images/hero-milk-desk.png);
+    }
+  }
+}
+
+.info-text {
+  display: flex;
+}
+
+.hero__info-text {
+  width: 114px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  @include font(400, 12px, 1.25, null);
+  color: $white-color;
+
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+    @include font(400, 14px, 1.28, null);
+  }
+}
+
+.info__checkbox {
+  display: none;
+}
+
+.info__additional {
+  display: none;
+  width: 144px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  @include font(400, 12px, 1.25, null);
+  color: $accent-color;
+
+  @media screen and (min-width: 1280px) {
+    width: 280px;
+    @include font(400, 20px, 1.28, null);
+  }
+}
+
+.info__checkbox:checked ~ .info__additional {
+  display: block;
+}
+
+.info__checkbox:checked ~ .info__label {
+  transform: rotate(-90deg);
+}
+
+.info__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-radius: 50%;
+  background-color: $white-color;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.info__icon {
+  fill: $accent-color;
+  width: 6px;
+
+  @media screen and (min-width: 1280px) {
+    width: 11px;
+  }
+}
+
+.hero-thumb {
+  &--first {
+    position: absolute;
+    bottom: -167px;
+    right: 32px;
+
+    @media screen and (min-width: 768px) {
+      bottom: -16px;
+      right: 303px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: -60px;
+      right: 408px;
+    }
+  }
+
+  &--second {
+    position: absolute;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+      display: block;
+      bottom: -16px;
+      right: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      bottom: -60px;
+      right: 16px;
+    }
+  }
+}

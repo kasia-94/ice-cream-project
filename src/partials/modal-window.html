@@ -1,0 +1,132 @@
+<!--Backdrop-->
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <div class="modal__top">
+      <img class="modal__label" src="./images/logo.png" alt="Logo of company" />
+      <button data-modal-close class="modal__button">Close</button>
+    </div>
+    <form class="form">
+      <p class="form__title">What do you want to buy?</p>
+      <ul class="list modal__list">
+        <li class="modal__item">
+          <label class="modal__switch"
+            ><input class="modal__check" type="checkbox" />
+            <span class="modal__slider"></span>
+          </label>
+          <p>Ice Cream</p>
+          <div class="modal__number">
+            <input
+              class="modal__number-text"
+              type="text"
+              name="count"
+              data-number-text
+              value="0"
+            />
+            <button type="button" class="modal__number-minus" data-number-minus>
+              -
+            </button>
+            <button type="button" class="modal__number-plus" data-number-plus>
+              +
+            </button>
+          </div>
+        </li>
+        <li class="modal__item">
+          <label class="modal__switch"
+            ><input class="modal__check" type="checkbox" />
+            <span class="modal__slider"></span>
+          </label>
+          <p>Ice Coffee</p>
+          <div class="modal__number">
+            <input
+              class="modal__number-text"
+              type="text"
+              name="count"
+              data-number-text-first
+              value="0"
+            />
+            <button
+              type="button"
+              class="modal__number-minus"
+              data-number-minus-first
+            >
+              -
+            </button>
+            <button
+              type="button"
+              class="modal__number-plus"
+              data-number-plus-first
+            >
+              +
+            </button>
+          </div>
+        </li>
+        <li class="modal__item">
+          <label class="modal__switch"
+            ><input class="modal__check" type="checkbox" />
+            <span class="modal__slider"></span>
+          </label>
+          <p>Milkshake</p>
+          <div class="modal__number">
+            <input
+              class="modal__number-text"
+              type="text"
+              name="count"
+              data-number-text-second
+              value="0"
+            />
+            <button
+              type="button"
+              class="modal__number-minus"
+              data-number-minus-second
+            >
+              -
+            </button>
+            <button
+              type="button"
+              class="modal__number-plus"
+              data-number-plus-second
+            >
+              +
+            </button>
+          </div>
+        </li>
+      </ul>
+      <label class="form__field">
+        Your Name
+        <input
+          class="form__imput"
+          type="text"
+          name="name"
+          placeholder="first name"
+        />
+        <svg class="form__icon">
+          <use href="./images/icons.svg#icon-person"></use>
+        </svg>
+      </label>
+
+      <label class="form__field">
+        Telephone
+        <input
+          class="form__imput"
+          type="tel"
+          name="tel"
+          placeholder="+1(xxx)xxx-xxxx"
+          required
+        />
+        <svg class="form__icon">
+          <use href="./images/icons.svg#icon-phone"></use>
+        </svg>
+      </label>
+
+      <label for="location">Choose your location</label>
+      <select class="form__imput-location" id="location" name="location">
+        <option value="Chicago">Chicago</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="New York">New York</option>
+      </select>
+
+      <button type="submit" class="form__button">Buy</button>
+    </form>
+  </div>
+</div>

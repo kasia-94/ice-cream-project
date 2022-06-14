@@ -1,0 +1,103 @@
+#map {
+    position: absolute;
+    width: 240px;
+    height: 430px;
+    @media screen and (min-width: 768px) {
+        width: 620px;
+        height: 530px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 870px;
+        height: 530px;
+    }
+}
+
+.map-backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    background-color: rgba(255, 245, 246, 0.718);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.map-modal__thumb{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 50px 10px 20px 10px;
+    width: 260px;
+    height: 500px;
+    background-color: #deebcc;
+    box-shadow: 0px 1px 5px rgba(100, 145, 50, 0.644), 0px 1px 1px rgba(100, 145, 50, 0.644), 0px 2px 1px rgba(100, 145, 50, 0.644);
+    border-radius: 4px;
+    transition: transform 500ms cubic-bezier(0.09, 0.62, 0.73, 1);
+    transform: translate(-50%, -50%) rotate(0deg);
+
+    @media screen and (min-width: 768px) {
+        width: 640px;
+        height: 600px;
+    }
+    @media screen and (min-width: 1280px) {
+        width: 890px;
+        height: 600px;
+    }
+}
+
+.map-modal__title {
+    z-index: 1;
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    font-family: 'Titan One';
+    @include font(700, 16px, 1.5, 0.03em);
+    color: $modal-main-color;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        @include font(null, 24px, null, 0.04em);
+    }
+}
+
+.map-modal__close-button {
+    position: absolute;
+    @extend %flex-centered;
+    z-index: 1;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+
+    background-color: $modal-main-color;
+    border-radius: 50%;
+    border: 1px solid $modal-main-color;
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+        background-color: $modal-accent-color;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    transition: transrorm 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .map-modal__thumb {
+        transform: rotate(90deg);
+    }
+}
+
+.no-scroll {
+    overflow: hidden;
+}

@@ -58,6 +58,21 @@
       @include font(400, 38px, 1.15, 0.04em);
     }
   }
+  transform: scale(1);
+  animation: pulse 3000ms ease-in-out 3;
+  @keyframes pulse {
+    from {
+      transform: scale(1);
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+
+    to {
+      transform: scale(1);
+    }
+  }
 }
 
 .hero__buttons {

@@ -13,6 +13,7 @@
 }
 
 .map-backdrop {
+    z-index: 1;
     position: fixed;
     top: 0;
     width: 100%;
@@ -29,9 +30,11 @@
     padding: 50px 10px 20px 10px;
     width: 260px;
     height: 500px;
+    max-height: 100vh;
+    overflow-y: auto;
     background-color: #deebcc;
     box-shadow: 0px 1px 5px rgba(100, 145, 50, 0.644), 0px 1px 1px rgba(100, 145, 50, 0.644), 0px 2px 1px rgba(100, 145, 50, 0.644);
-    border-radius: 4px;
+    border-radius: 24px;
     transition: transform 500ms cubic-bezier(0.09, 0.62, 0.73, 1);
     transform: translate(-50%, -50%) rotate(0deg);
 
@@ -90,8 +93,7 @@
 .is-hidden {
     opacity: 0;
     pointer-events: none;
-    visibility: hidden;
-    transition: transrorm 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   
 
     .map-modal__thumb {
         transform: rotate(90deg);

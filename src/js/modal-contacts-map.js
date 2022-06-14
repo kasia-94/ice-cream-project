@@ -11,7 +11,7 @@ function initMap() {
   map.setTilt(45);
 
   const contentString =
-    '<div id="content">Our location. Welcome!</div>';
+    '<div>Our location. Welcome!</div>';
   
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
@@ -55,9 +55,9 @@ window.initMap = initMap;
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector("[map-modal-open]"),
-    closeModalBtn: document.querySelector("[map-modal-close]"),
-    modal: document.querySelector("[map-modal]"),
+    openModalBtn: document.querySelector("[data-map-modal-open]"),
+    closeModalBtn: document.querySelector("[data-map-modal-close]"),
+    modal: document.querySelector("[data-map-modal]"),
     body: document.querySelector("body"),
   };
 

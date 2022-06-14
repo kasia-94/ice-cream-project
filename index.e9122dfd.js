@@ -1,0 +1,2 @@
+!function(){var e=new IntersectionObserver((function(e){e.forEach((function(e){e.isIntersecting&&e.target.classList.add("element-show")}))}),{threshold:[.2]}),t=document.querySelectorAll(".element-animation"),n=!0,r=!1,o=void 0;try{for(var l,a=t[Symbol.iterator]();!(n=(l=a.next()).done);n=!0){var i=l.value;e.observe(i)}}catch(e){r=!0,o=e}finally{try{n||null==a.return||a.return()}finally{if(r)throw o}}}();
+//# sourceMappingURL=index.e9122dfd.js.map

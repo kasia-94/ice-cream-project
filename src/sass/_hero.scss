@@ -1,22 +1,14 @@
 .hero {
   background-color: $main-hero-color;
-  background-image: url(../images/hero-circle.svg);
-  background-repeat: no-repeat;
-  background-position: 36px 83px;
-  background-size: 346px 344px;
 
   @media screen and (min-width: 768px) {
     padding-top: 102px;
     padding-bottom: 16px;
-    background-position: 248px 43px;
-    background-size: 346px 344px;
   }
 
   @media screen and (min-width: 1280px) {
     padding-top: 147px;
     padding-bottom: 60px;
-    background-position: 517px 54px;
-    background-size: 534px 534px;
   }
 }
 
@@ -28,6 +20,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
+  z-index: 3;
 
   @media screen and (max-width: 767px) {
     margin-top: 111px;
@@ -67,6 +60,8 @@
 }
 
 .hero__buttons {
+  display: flex;
+  align-items: center;
   margin-top: 20px;
   font-family: 'DM Sans';
   font-style: normal;
@@ -78,7 +73,10 @@
   }
 
   &--first {
+    display: flex;
+    align-items: center;
     padding: 0 14px;
+    margin-right: 8px;
     height: 24px;
     color: $white-color;
     background-color: $accent-color;
@@ -89,12 +87,16 @@
 
     @media screen and (min-width: 1280px) {
       padding: 0 23.5px;
+      margin-right: 12px;
       height: 40px;
     }
   }
 
   &--second {
+    display: flex;
+    align-items: center;
     padding: 0 14px;
+    margin-right: 8px;
     height: 24px;
     color: $accent-color;
     background-color: $white-color;
@@ -105,6 +107,7 @@
 
     @media screen and (min-width: 1280px) {
       padding: 0 23.5px;
+      margin-right: 12px;
       height: 40px;
     }
   }
@@ -290,6 +293,7 @@
     position: absolute;
     bottom: -167px;
     right: 32px;
+    z-index: 1;
 
     @media screen and (min-width: 768px) {
       bottom: -16px;
@@ -305,6 +309,7 @@
   &--second {
     position: absolute;
     display: none;
+    z-index: 1;
 
     @media screen and (min-width: 768px) {
       display: block;
@@ -315,6 +320,31 @@
     @media screen and (min-width: 1280px) {
       bottom: -60px;
       right: 16px;
+    }
+  }
+
+  &--circle {
+    position: absolute;
+    top: -83px;
+    left: 36px;
+    width: 346px;
+    height: 344px;
+    border-radius: 50%;
+    background-color: $secondary-hero-color;
+    z-index: 0;
+
+    @media screen and (min-width: 768px) {
+      width: 335px;
+      height: 333px;
+      top: -43px;
+      left: 248px;
+    }
+
+    @media screen and (min-width: 1280px) {
+      width: 534px;
+      height: 534px;
+      top: -54px;
+      left: 517px;
     }
   }
 }

@@ -14,6 +14,8 @@
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
+  overflow: hidden;
 }
 
 .backdrop.is-hidden .modal {
@@ -29,7 +31,7 @@
   background-color: $menu-background-color;
   border-radius: 4px;
 
-   @media screen and (min-width:321px) {
+  @media screen and (min-width: 321px) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);

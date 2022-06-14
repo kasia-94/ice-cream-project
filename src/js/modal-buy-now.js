@@ -18,10 +18,11 @@
 
   refs.openModalBtnMenu.addEventListener("click", toggleModalMenu);
 
+
   function toggleModalMenu() {
     refs.menu.classList.toggle("is-hidden");
     refs.modal.classList.toggle("is-hidden");
-    refs.body.classList.toggle("no-scroll");
+
   }
 
 })();
